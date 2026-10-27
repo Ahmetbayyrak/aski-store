@@ -53,7 +53,7 @@ const sheet = (h, t) => { $("sh").textContent = h; $("sp").textContent = t; $("s
 $("about").onclick = () => sheet("Hakkında", "ASKI, parçaların rafta değil askıda yaşadığı küçük bir konsept mağaza. Her ürün tek tek asılır, tek tek seçilir.");
 $("contact").onclick = () => sheet("İletişim", "hello@aski.store · Instagram @aski.store");
 $("sc").onclick = () => $("sheet").classList.remove("on");
-const tk = "&nbsp;&nbsp;SINIRLI KOLEKSİYON ✦ ÜCRETSİZ KARGO ✦ YENİ SEZON ASKIDA ✦ NUMARALI ÜRETİM ✦ ";
+const tk = "&nbsp;&nbsp;AHMET BAYRAK'IN DÜKKANINA HOŞGELDİNİZ SINIRLI KOLEKSİYON ✦ ÜCRETSİZ KARGO ✦ YENİ SEZON ASKIDA ✦ NUMARALI ÜRETİM ✦ ";
 $("tk").innerHTML = `<span>${tk.repeat(6)}</span><span>${tk.repeat(6)}</span>`;
 
 /* ---------- Firestore (canlı) ---------- */
