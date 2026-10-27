@@ -10,7 +10,7 @@
 <header>
   <button id="about">Hakkında</button>
   <div class="logo">ASKI</div>
-  <button id="contact">İletişim</button>
+  <div class="hr"><button id="contact">İletişim</button><button id="cartb">Sepet (<span id="cn2">0</span>)</button></div>
 </header>
 <button class="close" id="close">Kapat ×</button>
 
@@ -28,6 +28,7 @@
   <div class="info"><span id="pname"></span><small id="pprice"></small>
     <div class="sizes" id="sizes"></div>
     <button class="add" id="add">Sepete ekle</button>
+    <button class="del" id="vc">Sepeti gör (<span id="vcn">0</span>)</button>
     <button class="del adm" id="del">Bu ürünü sil</button>
   </div>
   <button class="arrow" id="next" aria-label="Sonraki">→</button>
@@ -42,8 +43,9 @@
   <input type="text" id="nm" placeholder="Ürün adı">
   <input type="text" id="pz" placeholder="Fiyat (ör. 1.250 ₺)">
   <input type="file" id="fl" accept="image/*" multiple>
-  <small>Askısıyla birlikte kıyafet fotoğrafı seç. Birden fazla seçersen her biri bir renk olur; dosya adı etiket olur (siyah.png, pembe.png).</small>
+  <small>Sadece kıyafetin fotoğrafını seç, askıyı site ekler. Birden fazla seçersen her biri bir renk olur; dosya adı etiket olur (siyah.png, pembe.png).</small>
   <label><input type="checkbox" id="rb" checked> Beyaz arka planı otomatik kaldır</label>
+  <label><input type="checkbox" id="hg" checked> Fotoğrafta askı yok, askıyı site eklesin</label>
   <button class="add" id="sv">Askıya as</button>
   <button class="del" id="cn">Vazgeç</button>
 </div></div>
@@ -57,6 +59,7 @@
 </div></div>
 
 <div id="sheet"><div><h2 id="sh"></h2><p id="sp"></p><br><button class="add" id="sc">Kapat</button></div></div>
+<aside id="cart"><div class="ch"><span>SEPET</span><button id="cx">Kapat ×</button></div><div id="cl"></div><p class="hint" id="cempty">Sepetin boş</p><div class="tot"><span>Toplam</span><span id="ct">0 ₺</span></div><button class="add" id="wa">WhatsApp ile sipariş ver</button></aside>
 <div id="toast"></div>
 <div class="ticker"><div id="tk"></div></div>
 
