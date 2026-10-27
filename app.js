@@ -145,7 +145,7 @@ $("del").onclick = async () => {
 };
 
 /* ---------- Sepet ---------- */
-const WHATSAPP = "";   // Siparişlerin gideceği numara, ülke koduyla ve + olmadan. Örn: "905551234567"
+const WHATSAPP = "905394684896";   // Siparişlerin gideceği numara, ülke koduyla ve + olmadan. Örn: "905551234567"
 let cart = []; try { cart = JSON.parse(localStorage.getItem("aski-cart") || "[]"); } catch (e) {}
 const saveCart = () => { try { localStorage.setItem("aski-cart", JSON.stringify(cart)); } catch (e) {} };
 const num = (s) => { s = String(s || "").replace(/[^\d,.]/g, ""); if (!s) return 0; if (s.includes(",")) s = s.replace(/\./g, "").replace(",", "."); else if (/^\d{1,3}(\.\d{3})+$/.test(s)) s = s.replace(/\./g, ""); return parseFloat(s) || 0; };
