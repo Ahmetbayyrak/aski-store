@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ASKI — Concept Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <button id="about">Hakkında</button>
+  <div class="logo">ASKI</div>
+  <button id="contact">İletişim</button>
+</header>
+<button class="close" id="close">Kapat ×</button>
+
+<main>
+  <section id="rack" aria-label="Koleksiyon">
+    <div class="rw"><div class="rod"></div><div class="row" id="row"></div></div>
+    <p class="hint" id="empty" hidden>Henüz ürün yok. Yönetici girişi yapıp ilk parçayı as.</p>
+    <p class="hint" id="hint">Bir parçaya dokun — askıdan indir</p>
+  </section>
+</main>
+
+<section id="prod">
+  <button class="arrow" id="prev" aria-label="Önceki">←</button>
+  <div class="stage" id="stage"></div>
+  <div class="info"><span id="pname"></span><small id="pprice"></small>
+    <div class="sizes" id="sizes"></div>
+    <button class="add" id="add">Sepete ekle</button>
+    <button class="del adm" id="del">Bu ürünü sil</button>
+  </div>
+  <button class="arrow" id="next" aria-label="Sonraki">→</button>
+</section>
+
+<button id="addb" class="adm">+ Ürün ekle</button>
+<button id="lgb">Yönetici</button>
+<button id="out" class="adm">Çıkış</button>
+
+<div class="modal" id="am"><div class="box">
+  <b>Yeni ürün</b>
+  <input type="text" id="nm" placeholder="Ürün adı">
+  <input type="text" id="pz" placeholder="Fiyat (ör. 1.250 ₺)">
+  <input type="file" id="fl" accept="image/*" multiple>
+  <small>Askısıyla birlikte kıyafet fotoğrafı seç. Birden fazla seçersen her biri bir renk olur; dosya adı etiket olur (siyah.png, pembe.png).</small>
+  <label><input type="checkbox" id="rb" checked> Beyaz arka planı otomatik kaldır</label>
+  <button class="add" id="sv">Askıya as</button>
+  <button class="del" id="cn">Vazgeç</button>
+</div></div>
+
+<div class="modal" id="lm"><div class="box">
+  <b>Yönetici girişi</b>
+  <input type="text" id="em" placeholder="E-posta" autocomplete="username">
+  <input type="password" id="pw" placeholder="Şifre" autocomplete="current-password">
+  <button class="add" id="li">Giriş yap</button>
+  <button class="del" id="lc">Vazgeç</button>
+</div></div>
+
+<div id="sheet"><div><h2 id="sh"></h2><p id="sp"></p><br><button class="add" id="sc">Kapat</button></div></div>
+<div id="toast"></div>
+<div class="ticker"><div id="tk"></div></div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
